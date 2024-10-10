@@ -1,0 +1,104 @@
+#full_body_margin {
+    max-width: 60%; 
+    margin: auto;
+}
+
+#ricefield {
+    font-family: "Qwitcher Grypen";
+    font-weight: bold;
+    font-size: 60px;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+
+#float_intro {
+    display: flex;
+}
+
+
+.float_description {
+    float: left;
+    width: 60%;
+}
+.float_img {
+    float: left;
+    width: 35%;
+}
+
+@keyframes fadein {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.confupic {
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+    object-position: 20% 20%;
+    opacity: 1;
+    animation: fadein 15s 1;
+}
+
+.confupic:hover {
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+    object-position: 20% 20%;
+    opacity: 1;
+    animation: fadein 20s 1;
+    box-shadow: 0px 0px 20px 2px rgb(242, 255, 156);
+}
+
+.what_could_be {
+    text-align: center;
+    text-decoration: underline; 
+}
+
+
+
+.box_steps {
+    padding: 1%;
+    border: 20px;
+    margin: 1%;
+}
+
+.box_steps:hover {
+    box-shadow: 0px 0px 10px 1px rgb(217, 217, 217);
+}
+
+.box_steps:hover > p {
+    visibility: visible;
+    text-shadow: 0px 0px 3px rgb(233, 233, 233);
+    color: rgb(255, 119, 119)
+}
+
+.box_steps:hover > b {
+    visibility: visible;
+    color: rgb(0, 0, 0)
+}
+
+
+.p_invis {
+    visibility: hidden;
+}
+
+
+
+
+
+
+
+.link::before {
+    content: '🔗';
+}
+
+
+
+  
