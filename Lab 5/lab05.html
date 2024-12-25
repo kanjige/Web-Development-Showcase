@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Lab 5</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="lab05.js"></script>
+    </head>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script>
+        $(document).ready(function() {
+    
+            $("#image").click(function() {
+                $(this).animate({ width:'100%', height:'100%' }, 1000);
+                $("#close").fadeIn();
+            });
+
+            $("#close").click(function() {
+                $("#image").animate({ width:'50px', height:'50px' }, 1000);
+                $(this).fadeOut();
+            });
+        });
+        </script>
+
+        <style>
+            ul {
+                list-style-type: none;
+            }
+            form {
+                text-align: center;
+            }
+            textarea {
+                width: 50ch;
+                height: 5ch;
+                display: block;  
+                margin-left: auto;
+                margin-right: auto;
+            }
+        </style>
+
+    <body style="max-width: 80ch; margin: auto;">
+
+        <header>
+            <h1>Lab 5: JavaScript & JQuery Showcase</h1>
+        </header>
+        <nav>
+            <a href="https://www.cs.ryerson.ca/~e12wong/index">Home</a>
+        </nav>
+        <hr/>
+
+
+        <section>
+            <h2 style="text-align: center;">Problem 1</h2>
+            <form name="form_input" onsubmit="return format(event)" style="text-align: center;">
+                <label for="name">Name</label> <br>
+                <input type="text" name="name" id="name"> <br>
+        
+                <label for="address">Address</label> <br>
+                <input type="text" name="address" id="address"> <br>
+        
+                <label for="phone">Phone Number</label> <br>
+                <input type="text" name="phone" id="phone"> <br><br>
+        
+                <input type="submit" value="Create Form">
+            </form>
+            <h4>Receipt</h4>
+            <h5 id="form_output">Order Pending</h5>
+        </section>
+        
+        <hr>
+
+        <section>
+            <h2 style="text-align: center;">Problem 2</h2>
+            <textarea id="strlen_input" placeholder="Input text here" oninput="stringLength()">Input string length here</textarea>
+            <ul>
+                <li id="strlen">String Length: 24</li>
+                <li id="filterlen">String Length (Letters Only): 21</li>
+            </ul>
+        </section>
+
+        <hr>
+
+        <section style="text-align: center;">
+            <h2>Problem 3</h2>
+            <small><small><small>*click me*</small></small></small>
+            <img id="image" src="penguin.jpg" alt="Penguin" style="width:50px">
+            <button id="close" style="background-color: #00000f;">
+                <img src="arrow.svg">
+            </button>
+
+        </section>
+
+
+        
+
+            <br><br><br>
+            <footer>
+                <p><small>Copyright &copy 2004-2024 Rice Productions</small></p>
+            </footer>
+        </main>    
+    </body>
+
