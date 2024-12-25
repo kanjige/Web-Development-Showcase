@@ -1,0 +1,82 @@
+<html>
+    <head>
+        <title>Lab 7b</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=0.99">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Qwitcher+Grypen:wght@400;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+   
+    </head>
+
+    <style>
+        body { 
+            max-width: 40%; margin: auto;
+            font-family: 'Roboto', sans-serif;
+        }
+    </style>
+    
+
+    <body> 
+        
+        <section>
+            <h1 style="text-align: center;">Problem 2: Passport Generator</h1>
+
+            <nav style="text-align: center;">
+                <p><a href="https://www.cs.ryerson.ca/~e12wong/index">Home</a> 
+                   <a href="https://www.cs.ryerson.ca/~e12wong/lab07/lab07.html">Nav</a> 
+                   <a href="https://www2.cs.torontomu.ca/~e12wong/cgi-bin/lab07a.cgi">Problem 1</a></p>
+            </nav>
+            <hr>
+
+            <form action="https://www2.cs.torontomu.ca/~e12wong/cgi-bin/lab07b.cgi" method="post" enctype="multipart/form-data" style="text-align: center;">
+                
+                <h3>Name</h3>
+                
+                <label>First Name</label> <br>
+                <input type="text" name="firstname" id="firstname" required> <br>
+                
+                <label>Last Name</label> <br>
+                <input type="text" name="lastname" id="lastname" required> <br>
+        
+                <h3>Address</h3>
+                <label>Street Name</label> <br>
+                <input type="text" name="street" id="street" required> <br>
+                <label>City</label> <br>
+                <input type="text" name="city" id="city" required> <br>
+                <label>Postal Code</label> <br>
+                <input type="text" name="postalcode" id="postalcode" required> <br>
+                <label>Province</label> <br>
+                <select name="province" style="text-align: center;">      
+                    <option value="AB">Alberta</option>
+                    <option value="BC">British Columbia</option>
+                    <option value="MB">Manitoba</option>
+                    <option value="NB">New Brunswick</option>
+                    <option value="NL">Newfoundland & Labrador</option>        
+                    <option value="NT">Northwest Territories</option>
+                    <option value="NS">Nova Scotia</option>
+                    <option value="NU">Nunavut</option>
+                    <option value="ON">Ontario</option>
+                    <option value="PE">Prince Edward Island</option>
+                    <option value="SK">Saskatchewan</option>
+                    <option value="QC">Quebec</option>
+                    <option value="YT">Yukon Territory</option>
+                </select>
+        
+                <br>
+                <h3>Contact Information</h3>
+                <label>Phone Number</label> <br>
+                <input type="text" name="phone" id="phone" required> <br>
+                <label>Email Address</label> <br>
+                <input type="text" name="email" id="email" required> <br><br>
+
+                <h3>Image</h3>
+                <input type="file" name="picture" required> 
+
+                <br><br>
+                <button type="submit">Submit</button>
+            </form>
+
+        </section>
+    </body>
