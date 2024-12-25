@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Lab 4</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="lab04.js"></script>
+    </head>
+
+    <style>
+        ul {
+            list-style-type: none;
+        }
+        textarea {
+            width: 70ch;
+            height: 10ch;
+            display: block;  /* Ensures it's treated as a block element */
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+    
+    </style>
+
+    <body style="max-width: 80ch; margin: auto;">
+        <header>
+            <h1>Lab 4: JavaScript Showcase</h1>
+        </header>
+        <nav>
+            <a href="https://www.cs.ryerson.ca/~e12wong/index">Home</a>
+        </nav>
+        <hr/>
+    
+        <main>
+        <section>
+            <h2>Secure Website Connection (Problem 1)</h2>
+        <textarea id="bookmark_input" oninput="javascript:secureBookmark()">
+https://www.cs.ryerson.ca/~e12wong/index
+http://httpforever.com/
+</textarea>
+        <ul id="bookmark_list">
+            <li>
+                <img src="locked.svg" width="25">
+                <a href="https://www.cs.ryerson.ca/~e12wong/index">https://www.cs.ryerson.ca/~e12wong/index</a>
+            </li>
+            <li>
+                <img src="unlocked.svg" width="25">
+                <a href="http://httpforever.com/">http://httpforever.com/</a>
+            </li>
+        </ul>
+        </section>
+
+        <br><br>
+        <section>
+            <h2>Palindrome Checker (Problem 2)</h2>
+            <textarea id="palindrome_input" oninput="javascript:palindromeCheck()">
+Drab as a fool, aloof as a bard.
+It ain't over till it's over
+radar
+When you come to a fork in the road, take it
+Marge lets Norah see Sharon’s telegram.  
+    </textarea>
+            <ul id="palindromes">
+                <li style="color:green;">Drab as a fool, aloof as a bard.</li>
+                <li style="color:red;">It ain't over till it's over</li>
+                <li style="color:green;">radar</li>
+                <li style="color:red;">When you come to a fork in the road, take it</li>
+                <li style="color:green;">Marge lets Norah see Sharon’s telegram.</li>
+            </ul>
+            </section>
+            <br><br><br>
+            <footer>
+                <p><small>Copyright &copy 2004-2024 Rice Productions</small></p>
+            </footer>
+        </main>    
+    </body>
+
